@@ -1,0 +1,8 @@
+[Unit]
+Description=A Script for Checking Temperature Using DHT22 and Python3
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/TempWarningService/temperature_main.py
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=hello
